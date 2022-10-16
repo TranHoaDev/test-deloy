@@ -35,7 +35,8 @@ public class GraphQLProvider {
 
     @PostConstruct
     public void loadSchema() throws IOException {
-        File fileSchema = resource.getFile();
+//        File fileSchema = resource.getFile();
+        File fileSchema = new File("src/main/resources/graphql/schemas.graphql");
         TypeDefinitionRegistry typeRegistry = new SchemaParser().parse(fileSchema);
         RuntimeWiring wiring = buildRuntimeWiring();
         GraphQLSchema schema = new SchemaGenerator().makeExecutableSchema(typeRegistry, wiring);
