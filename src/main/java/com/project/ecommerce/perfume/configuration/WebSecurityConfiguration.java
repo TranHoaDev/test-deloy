@@ -70,7 +70,7 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Bean
     CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(Arrays.asList("https://ecommerce-fe-three.vercel.app"));
+        configuration.setAllowedOrigins(Arrays.asList("https://ecommerce-fe-three.vercel.app", "http://localhost:3000"));
         configuration.setAllowedMethods(Arrays.asList("GET","POST", "DELETE", "PUT"));
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**", configuration);
