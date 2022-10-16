@@ -3,8 +3,8 @@ info:
   version: "1.0.0"
   title: "ecommerce-spring-reactjs"
 servers:
-  - url: "http://localhost:8080"
-  - url: "https://perfume-websore-api.herokuapp.com"
+#  - url: "http://localhost:8080"
+  - url: "https://myproject-perfume-api.herokuapp.com"
 
 tags:
   - name: "AdminController"
