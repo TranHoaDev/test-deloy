@@ -4,11 +4,11 @@ insert into users(id, email, first_name, last_name, city, address, phone_number,
 
 -- password: admin
 insert into users(id, email, first_name, last_name, city, address, phone_number, post_index, activation_code, active, password, password_reset_code, provider)
-    values(2, 'test123@test.com', 'John', 'Doe', 'New York', 'Wall Street1', '1234567890', '1234567890', null, true, '$2a$08$eApn9x3qPiwp6cBVRYaDXed3J/usFEkcZbuc3FDa74bKOpUzHR.S.', null, 'LOCAL');
+    values(2, 'test123@test.com', 'Tran', 'Hoa', 'Ho Chi Minh', 'f14, Tan Binh', '0123456789', '56789', null, true, '$2a$08$eApn9x3qPiwp6cBVRYaDXed3J/usFEkcZbuc3FDa74bKOpUzHR.S.', null, 'LOCAL');
 
 -- password: admin
 insert into users(id, email, first_name, last_name, city, address, phone_number, post_index, activation_code, active, password, password_reset_code, provider)
-    values(3, 'ivan123@test.com', 'Ivan', 'Ivanov', 'Moscow', 'Tverskaya street 1', '1234567890', '1234567890', null, true, '$2a$08$eApn9x3qPiwp6cBVRYaDXed3J/usFEkcZbuc3FDa74bKOpUzHR.S.', null, 'LOCAL');
+    values(3, 'demo123@test.com', 'Minh', 'Le', 'Ninh Binh', 'Kim Son', '1234567890', '12345', null, true, '$2a$08$eApn9x3qPiwp6cBVRYaDXed3J/usFEkcZbuc3FDa74bKOpUzHR.S.', null, 'LOCAL');
 
 insert into user_role (user_id, roles)
     values (1, 'ADMIN');
