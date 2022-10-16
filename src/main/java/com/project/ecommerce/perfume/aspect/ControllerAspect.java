@@ -12,7 +12,7 @@ import java.util.Arrays;
 @Component
 public class ControllerAspect {
 
-    @Pointcut(value = "execution(* com.gmail.merikbest2015.ecommerce.controller.*.*(..))")
+    @Pointcut(value = "execution(* com.project.ecommerce.perfume.controller.*.*(..))")
     public void executeLogging() {
     }
 
